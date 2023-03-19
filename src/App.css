@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.text-pink {
+  color: pink;
+}
+
+.text-teal {
+  color: teal;
+}
