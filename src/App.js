@@ -1,14 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import Car from './components/car'
+import { AddButton } from './components/AddButton';
+import Buttons from './components/buttons';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Car />
+        <Buttons />
         <a
           className="App-link"
           href="https://reactjs.org"
