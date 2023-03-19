@@ -4,18 +4,25 @@ import SubtractButton from './SubtractButton';
 
 let e = React.createElement;
 class Buttons extends React.Component {
+    constructor()
+        {
+            super();
+            this.state = {count: 0}
+        }
+    toggleValue = () => {
+        console.log('toggle');
+        this.state.count === 0 ? this.setState({count:1}) : this.setState({count:0})
+    }
 render() {
-    return e('div', { className: 'container' },
-    e('h1', {},
-        'Count:',
-        e('span', { className: 'badge bg-secondary' }, 0)
-    ),
-    e('div', {},
-    e(AddButton, {}),
-    ' ',
-    e(SubtractButton, {})
-    )
-    );
+   return <div className='container'>
+    <h1>Count: <span className='badge bg-secondary'>{this.state.count}</span> </h1>
+    
+    <button onClick={this.toggleValue}>Toggle</button>
+    <div>
+        <AddButton />
+        <SubtractButton />
+    </div>
+   </div>
 }
 }
 

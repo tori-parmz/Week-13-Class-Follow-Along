@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import Car from './components/car'
-import { AddButton } from './components/AddButton';
 import Buttons from './components/buttons';
 
 function App() {
@@ -9,7 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Car />
+        <Car make='GMC' model='Safari' color='red'/>
         <Buttons />
         <a
           className="App-link"
