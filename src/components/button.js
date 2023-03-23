@@ -3,7 +3,7 @@
 import React from 'react';
 
 /**
- * 1. import 
+ * 1. import react
  * 2. define the class and it inherits from React.Component
  * 3. Render & Return
  * 4. Inside the return we have html
